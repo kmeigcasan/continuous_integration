@@ -19,8 +19,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         always-auth: true
-    - name: Grant execute permission for mocha
-      run: chmod +x ../../test/test.js
     - name: Install
       run: npm install
     - name: Test
