@@ -10,7 +10,7 @@ describe("Numbers Model", function(){
         let param = "1,2,3,4,5,6";
         let result = num.getEven(param);
 
-        expect(result).to.deep.equal(["2","4"]); //intentional mistake
+        expect(result).to.deep.equal(["2","4","6"]); //correct the intentional mistake
     });
 
     it("Return an error message if the string passed is empty", function(){
