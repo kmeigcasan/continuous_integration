@@ -4,20 +4,13 @@ const assert = chai.assert;
 const Numbers = require('./numbers');
 
 describe("Numbers Model", function(){
-    it("The parameter is in a string format", function(){
-        let num = new Numbers();
-        let param = "1,2,3,4,5,6";
-        let result = num.getEven(param);
-
-        expect(param).to.be.a("string");
-    });
     
     it("Return the expected return value on success", function(){
         let num = new Numbers();
         let param = "1,2,3,4,5,6";
         let result = num.getEven(param);
 
-        expect(result).to.deep.equal(["2","4","6"]);
+        expect(result).to.deep.equal(["2","4"]); //intentional mistake
     });
 
     it("Return an error message if the string passed is empty", function(){
