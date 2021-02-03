@@ -4,7 +4,7 @@ class Numbers {
             throw new TypeError('Illegal type!');
         }
         let array = str.split(",");
-        let even = [];
+        let even = []; //removed intentional bug
         for(let i=0; i<array.length; i++){
             if(array[i]%2==0){
                 even.push(array[i]);
